@@ -50,82 +50,33 @@ mask_generator = SamAutomaticMaskGenerator(sam)
 masks = mask_generator.generate(image)
 
 
-def draw_mask_numbers(image, masks):
-    output = image.copy()
-
-    for mask in masks:
-        x = mask['x']
-        y = mask['y']
-        number = mask['number']
-
-        cv2.putText(output, str(number), (x, y),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 0), 2)
-
-    return output
-
-
-
-for i,mask in enumerate(masks):
-    mask['number']= i+1
-
-labeled_image = draw_mask_numbers(image, masks)
-
-# cv2.imwrite("labeled_image.png", labeled_image)
-
-print (masks)
-
-
-# plt.figure(figsize=(20,20))
-# plt.imshow(image)
-# show_anns(masks)
-# plt.axis('off')
-# plt.show()
 
 
 
 
 
 
-# def auto_segment_abdomen(image_path):
-#     image = cv2.imread(image_path)
-#     image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
 
 
-#     overlay = image_rgb.copy()
-#     muscle_list = []
+plt.figure(figsize=(20,20))
+plt.imshow(image)
+show_anns(masks)
 
-#     for i, mask_data in enumerate(masks[:len(abdomen_muscles)]):  # Limit to known muscles
-#         muscle_id = i + 1
-#         muscle_info = abdomen_muscles.get(muscle_id, None)
-#         if muscle_info is None:
-#             continue
+for i, mask_data in enumerate(masks):
+    x, y, w, h = mask_data['bbox']
+    center_x = x + w / 2
+    center_y = y + h / 2
+    plt.text(center_x, center_y, str(i + 1),
+             fontsize=12, color='white', ha='center', va='center',
+             bbox=dict(facecolor='black', alpha=0.5, boxstyle='round'))
 
-#         mask = mask_data["segmentation"]
-#         color = muscle_info["color"]
 
-#         contours, _ = cv2.findContours(mask.astype(np.uint8), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-#         cv2.drawContours(overlay, contours, -1, color, thickness=2)
+plt.axis('off')
+plt.show()
 
-#         # Find center of mask
-#         M = cv2.moments(mask.astype(np.uint8))
-#         if M["m00"] != 0:
-#             cx = int(M["m10"] / M["m00"])
-#             cy = int(M["m01"] / M["m00"])
-#         else:
-#             cx, cy = 50 + i * 50, 50  # Fallback
 
-#         # Overlay number
-#         cv2.putText(overlay, str(muscle_id), (cx, cy), cv2.FONT_HERSHEY_SIMPLEX, 0.8, color, 2)
 
-#         # Add to list
-#         muscle_list.append(f"{muscle_id}. {muscle_info['name']}")
 
-#     # Save and show
-#     output_path = "abdomen_auto_segmented.jpg"
-#     cv2.imwrite(output_path, cv2.cvtColor(overlay, cv2.COLOR_RGB2BGR))
-#     print("Segmented image saved as:", output_path)
 
-#     print("\n🧠 Muscle Labels:")
-#     for label in muscle_list:
-#         print(label)
+
