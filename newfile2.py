@@ -1,5 +1,0 @@
-plt.figure(figsize=(20,20))
-plt.imshow(image)
-show_anns(masks)
-plt.axis('off')
-plt.show()
