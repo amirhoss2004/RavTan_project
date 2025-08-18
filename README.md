@@ -10,3 +10,4 @@ AI anatomy illustrator answering machine
 <br><img src="https://github.com/amirhoss2004/RavTan_project/blob/57bbd3106545d12fd072cc068d7014f852671420/assets/Untitled-3.jpg" width="800"></br>
 <br>SAM module used :(download link) </br>
 <br>**default or vit_h: [ViT-H SAM model.](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth)**</br>
+<br> telegram_bot id:  @Ravtan_bot </br>
