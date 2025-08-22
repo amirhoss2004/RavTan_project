@@ -1,10 +1,8 @@
-# 🧠 Anatomy Segmentation Assistant with AI & Telegram Bot
+# 🧠 RavTan bot
 
 Welcome to the official repository of **Anatomy Segmentation Assistant**, a Python-powered tool that uses AI to segment anatomical images and label muscles intelligently. This project combines the power of [SAM (Segment Anything Model)](https://github.com/facebookresearch/segment-anything), a Telegram bot interface, and custom logic to help students, educators, and researchers explore human anatomy visually.
 
 ---
-
-## 📸 Project Preview
 
 ![Iconic Image of AI Anatomy](https://example.com/iconic-anatomy-image.jpg)
 
@@ -24,6 +22,7 @@ Welcome to the official repository of **Anatomy Segmentation Assistant**, a Pyth
 - AI-powered muscle name recognition
 - Save and visualize overlays with numbers
 - Easy-to-use bot interface for non-technical users
+- feel free to ask any question!
 
 ---
 
@@ -37,7 +36,7 @@ Welcome to the official repository of **Anatomy Segmentation Assistant**, a Pyth
 
 ---
 
-## 📲 Getting Started
+## 📲 using telgram bot:RavTan bot
 
 ![Telegram Bot Getting Started](https://example.com/telegram-bot-start.jpg)
 
