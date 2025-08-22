@@ -4,7 +4,7 @@ import base64
 import os
 
 base_url = "https://api.avalai.ir/v1"
-api_key = "aa-qfaySfy9WkBPMXlGUuWCWFq9zdHxWDLm8wqHxtA5Qrc5u1V6"
+api_key = "api key"
 model_name = "gpt-4o"
 
 llm = ChatOpenAI(
