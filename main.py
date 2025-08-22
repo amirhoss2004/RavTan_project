@@ -10,7 +10,7 @@ import io
 print("ready")
 
 # Token is here
-token = '8235233951:AAEdEzDoRIoPlMBm3t_-CJliwOlmd8IEsFo'
+token = 'token'
 bot = telebot.TeleBot(token=token)
 
 # First menu button on this side
