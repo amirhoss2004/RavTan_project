@@ -1,10 +1,8 @@
-# <img src="https://github.com/amirhoss2004/RavTan_project/blob/e069c5603c858c2296a91bc26917b8eeba5ed21f/assets/bd0b0a1ffd067a59de11b4b85b4c78e7.jpg" width="48"> RavTan bot
+# <img src="https://github.com/amirhoss2004/RavTan_project/blob/e069c5603c858c2296a91bc26917b8eeba5ed21f/assets/bd0b0a1ffd067a59de11b4b85b4c78e7.jpg" width="48"> <b>RavTan bot</b>
 
 Welcome to the official repository of **Anatomy Segmentation Assistant**, a Python-powered tool that uses AI to segment anatomical images and label muscles intelligently. This project combines the power of [SAM (Segment Anything Model)](https://github.com/facebookresearch/segment-anything), a Telegram bot interface, and custom logic to help students, educators, and researchers explore human anatomy visually.
 
 ---
-
-![Iconic Image of AI Anatomy](https://example.com/iconic-anatomy-image.jpg)
 
 ### 🔍 SAM Segmentation Example
 
@@ -37,7 +35,9 @@ Welcome to the official repository of **Anatomy Segmentation Assistant**, a Pyth
 ---
 
 ## 📲 using telgram bot:RavTan bot
-
-![Telegram Bot Getting Started](https://example.com/telegram-bot-start.jpg)
 bot ID : @Ravtan_bot
+_____________________
+
+<img src="https://github.com/amirhoss2004/RavTan_project/blob/3838baf2893cf32a5698cd49f78c9931ab390e3b/assets/Picture1.png" width="190"><img src="https://github.com/amirhoss2004/RavTan_project/blob/98ca36868bccd3f3659a4ec5a818598495f9a068/assets/Screenshot%20(751).png" width="230">
+
 
