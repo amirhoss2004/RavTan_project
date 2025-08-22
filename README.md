@@ -1,13 +1,47 @@
-# RavTan
+# 🧠 Anatomy Segmentation Assistant with AI & Telegram Bot
 
-<img src="https://github.com/amirhoss2004/RavTan_project/blob/e069c5603c858c2296a91bc26917b8eeba5ed21f/assets/bd0b0a1ffd067a59de11b4b85b4c78e7.jpg" width="48">
-AI anatomy illustrator answering machine
-<br>____________________________________________________________</br>
-<br><b><b>RavTan</b></b> is telegram bot for segmentation and labelizing  anatomical module image, connected to AI for asking anatomical question.</br>
-<br>segmentation requires SAM(segment any thing) for creating overlayed color mask on original image:</br>
-<br><img src="https://github.com/amirhoss2004/RavTan_project/blob/57bbd3106545d12fd072cc068d7014f852671420/assets/Untitled-2.jpg" width="800"></br>
-<b><br><br>        if one image gets more segmentation process than one time , each image masks can have different colors: </br></br></b>
-<br><img src="https://github.com/amirhoss2004/RavTan_project/blob/57bbd3106545d12fd072cc068d7014f852671420/assets/Untitled-3.jpg" width="800"></br>
-<br>SAM module used :(download link) </br>
-<br>** default or vit_h: (https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth) **</br>
-<br> telegram_bot id:  @Ravtan_bot </br>
+Welcome to the official repository of **Anatomy Segmentation Assistant**, a Python-powered tool that uses AI to segment anatomical images and label muscles intelligently. This project combines the power of [SAM (Segment Anything Model)](https://github.com/facebookresearch/segment-anything), a Telegram bot interface, and custom logic to help students, educators, and researchers explore human anatomy visually.
+
+---
+
+## 📸 Project Preview
+
+![Iconic Image of AI Anatomy](https://example.com/iconic-anatomy-image.jpg)
+
+### 🔍 SAM Segmentation Example
+
+| Original Image | Segmented Output |
+|----------------|------------------|
+| ![Original](https://example.com/original-image.jpg) | ![Segmented](https://example.com/segmented-image.jpg) |
+
+---
+
+## 🚀 Features
+
+- Upload anatomical images via Telegram
+- Automatically segment muscles using SAM
+- Label each region with a unique number
+- AI-powered muscle name recognition
+- Save and visualize overlays with numbers
+- Easy-to-use bot interface for non-technical users
+
+---
+
+## 🧑‍💻 Technologies Used
+
+- Python 3.10+
+- OpenCV & Matplotlib
+- Segment Anything Model (SAM)
+- Telegram Bot API (`python-telegram-bot`)
+- Optional: CLIP / BLIP-2 for muscle labeling
+
+---
+
+## 📲 Getting Started
+
+![Telegram Bot Getting Started](https://example.com/telegram-bot-start.jpg)
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/anatomy-segmentation-bot.git
+   cd anatomy-segmentation-bot
